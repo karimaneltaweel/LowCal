@@ -19,8 +19,8 @@ class LowCalController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpGrediant()
-        
     }
+    
     
     private func setUpGrediant(){
         let gradient = CAGradientLayer()

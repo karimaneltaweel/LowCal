@@ -19,11 +19,12 @@ extension LowCalController: UITableViewDelegate, UITableViewDataSource{
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionOneCell", for: indexPath) as! SectionOneCell
             return cell
-
+            
         }
         else
         {
             let cell = tableView.dequeueReusableCell(withIdentifier: "SectionTwoCell", for: indexPath) as! SectionTwoCell
+            cell.mealChoiceHeight.constant = 396 * 3 + cell.mealsChoice.rectForHeader(inSection: 0).size.height + cell.mealsChoice.rectForFooter(inSection: 0).size.height
             return cell
             
         }
