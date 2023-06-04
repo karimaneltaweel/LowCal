@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD6859412A2C64B100AF2917 /* SectionOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6859402A2C64B100AF2917 /* SectionOneCell.swift */; };
+		DD6859432A2C64FA00AF2917 /* SectionTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6859422A2C64FA00AF2917 /* SectionTwoCell.swift */; };
+		DD6859452A2C66A500AF2917 /* SectionOne+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6859442A2C66A500AF2917 /* SectionOne+Delegate.swift */; };
 		DDB8A89E2A275BBF0006846E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8A89D2A275BBF0006846E /* AppDelegate.swift */; };
 		DDB8A8A02A275BBF0006846E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8A89F2A275BBF0006846E /* SceneDelegate.swift */; };
 		DDB8A8A22A275BBF0006846E /* LowCalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8A8A12A275BBF0006846E /* LowCalController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD6859402A2C64B100AF2917 /* SectionOneCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionOneCell.swift; sourceTree = "<group>"; };
+		DD6859422A2C64FA00AF2917 /* SectionTwoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTwoCell.swift; sourceTree = "<group>"; };
+		DD6859442A2C66A500AF2917 /* SectionOne+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionOne+Delegate.swift"; sourceTree = "<group>"; };
 		DDB8A89A2A275BBF0006846E /* LowCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LowCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB8A89D2A275BBF0006846E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB8A89F2A275BBF0006846E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,9 @@
 		DDB8A8B82A2897D70006846E /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				DD6859402A2C64B100AF2917 /* SectionOneCell.swift */,
+				DD6859422A2C64FA00AF2917 /* SectionTwoCell.swift */,
+				DD6859442A2C66A500AF2917 /* SectionOne+Delegate.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -176,6 +185,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6859432A2C64FA00AF2917 /* SectionTwoCell.swift in Sources */,
+				DD6859452A2C66A500AF2917 /* SectionOne+Delegate.swift in Sources */,
+				DD6859412A2C64B100AF2917 /* SectionOneCell.swift in Sources */,
 				DDB8A8B72A28834A0006846E /* LowCalController+Delegate.swift in Sources */,
 				DDB8A8A22A275BBF0006846E /* LowCalController.swift in Sources */,
 				DDB8A89E2A275BBF0006846E /* AppDelegate.swift in Sources */,

@@ -8,7 +8,12 @@
 import UIKit
 
 class LowCalController: UIViewController {
-     var firstColor = #colorLiteral(red: 0.9647058845, green: 0.9647058845, blue: 0.9647058845, alpha: 1).cgColor
+    @IBOutlet weak var headerView: UIView!{
+        didSet{
+            headerView.layer.cornerRadius = 20
+        }
+    }
+    var firstColor = #colorLiteral(red: 0.9647058845, green: 0.9647058845, blue: 0.9647058845, alpha: 1).cgColor
      var secondColor = #colorLiteral(red: 0.9960785508, green: 0.9960785508, blue: 0.9960784316, alpha: 1).cgColor
     var Thirdcolor = #colorLiteral(red: 0.8961616158, green: 0.950962007, blue: 0.9369022846, alpha: 1).cgColor
     override func viewDidLoad() {

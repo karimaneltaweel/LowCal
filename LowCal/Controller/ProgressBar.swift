@@ -80,7 +80,7 @@ class ProgressBar: UIView {
         textLayer.foregroundColor = forgroundColor
         textLayer.fontSize = fontSize
         textLayer.frame = CGRect(x: 0, y: yposition, width: width, height: height)
-        
+//        drawImage()
         textLayer.alignmentMode = .center
         return textLayer
     }
@@ -93,5 +93,8 @@ class ProgressBar: UIView {
         gragient.frame = rect
         return gragient
     }
-    
+    func drawImage() {
+        let image = UIImage(systemName: "circle")// replace with your image file name
+        image?.draw(in: CGRect(x: 100, y: 100, width: 23, height: 23)) // adjust the CGRect as needed
+    }
 }
