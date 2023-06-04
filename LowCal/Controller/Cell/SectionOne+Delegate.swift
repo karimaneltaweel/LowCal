@@ -12,7 +12,11 @@ extension SectionOneCell: UICollectionViewDelegate, UICollectionViewDataSource{
         if collectionView == dateSection{
             return 5
         }
-        return 3
+        else
+        {
+            return 3
+            
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -25,5 +29,19 @@ extension SectionOneCell: UICollectionViewDelegate, UICollectionViewDataSource{
             return cell}
     }
     
+    
+}
+
+extension SectionOneCell: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if collectionView == dateSection{
+            return CGSize(width: dateSection.layer.frame.width * 0.3 , height:  dateSection.layer.frame.height*0.7)
+        }
+        else
+        {
+            return CGSize(width: mealsSection.layer.frame.width * 0.4 , height:  mealsSection.layer.frame.height)
+            
+        }
+    }
     
 }
