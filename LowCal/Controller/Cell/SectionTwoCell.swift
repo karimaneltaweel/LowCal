@@ -9,6 +9,18 @@ import UIKit
 
 class SectionTwoCell: UITableViewCell {
 
+    @IBOutlet weak var monthCollection: UICollectionView!{
+        didSet{
+            monthCollection.dataSource = self
+            monthCollection.delegate = self
+        }
+    }
+    @IBOutlet weak var mealsChoice: UITableView!{
+        didSet{
+            mealsChoice.dataSource = self
+            mealsChoice.delegate = self
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

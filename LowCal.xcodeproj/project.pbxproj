@@ -11,6 +11,7 @@
 		DD6859432A2C64FA00AF2917 /* SectionTwoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6859422A2C64FA00AF2917 /* SectionTwoCell.swift */; };
 		DD6859452A2C66A500AF2917 /* SectionOne+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6859442A2C66A500AF2917 /* SectionOne+Delegate.swift */; };
 		DD6859472A2C703100AF2917 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6859462A2C703100AF2917 /* DateCell.swift */; };
+		DD6859492A2C81E700AF2917 /* SectionTwo+delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6859482A2C81E700AF2917 /* SectionTwo+delegate.swift */; };
 		DDB8A89E2A275BBF0006846E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8A89D2A275BBF0006846E /* AppDelegate.swift */; };
 		DDB8A8A02A275BBF0006846E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8A89F2A275BBF0006846E /* SceneDelegate.swift */; };
 		DDB8A8A22A275BBF0006846E /* LowCalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB8A8A12A275BBF0006846E /* LowCalController.swift */; };
@@ -26,6 +27,7 @@
 		DD6859422A2C64FA00AF2917 /* SectionTwoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTwoCell.swift; sourceTree = "<group>"; };
 		DD6859442A2C66A500AF2917 /* SectionOne+Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionOne+Delegate.swift"; sourceTree = "<group>"; };
 		DD6859462A2C703100AF2917 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		DD6859482A2C81E700AF2917 /* SectionTwo+delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SectionTwo+delegate.swift"; sourceTree = "<group>"; };
 		DDB8A89A2A275BBF0006846E /* LowCal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LowCal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB8A89D2A275BBF0006846E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB8A89F2A275BBF0006846E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				DD6859422A2C64FA00AF2917 /* SectionTwoCell.swift */,
 				DD6859442A2C66A500AF2917 /* SectionOne+Delegate.swift */,
 				DD6859462A2C703100AF2917 /* DateCell.swift */,
+				DD6859482A2C81E700AF2917 /* SectionTwo+delegate.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				DD6859432A2C64FA00AF2917 /* SectionTwoCell.swift in Sources */,
 				DD6859452A2C66A500AF2917 /* SectionOne+Delegate.swift in Sources */,
 				DD6859412A2C64B100AF2917 /* SectionOneCell.swift in Sources */,
+				DD6859492A2C81E700AF2917 /* SectionTwo+delegate.swift in Sources */,
 				DD6859472A2C703100AF2917 /* DateCell.swift in Sources */,
 				DDB8A8B72A28834A0006846E /* LowCalController+Delegate.swift in Sources */,
 				DDB8A8A22A275BBF0006846E /* LowCalController.swift in Sources */,
