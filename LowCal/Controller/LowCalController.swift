@@ -21,7 +21,6 @@ class LowCalController: UIViewController {
         setUpGrediant()
     }
     
-    
     private func setUpGrediant(){
         let gradient = CAGradientLayer()
         gradient.colors = [firstColor,secondColor,Thirdcolor]

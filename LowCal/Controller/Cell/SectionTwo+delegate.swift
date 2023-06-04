@@ -29,7 +29,7 @@ extension SectionTwoCell:UITableViewDelegate, UITableViewDataSource{
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 396
+        return  327
     }
     
 }
