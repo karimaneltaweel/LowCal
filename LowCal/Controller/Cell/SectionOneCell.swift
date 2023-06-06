@@ -20,4 +20,7 @@ class SectionOneCell: UITableViewCell {
                 mealsSection.dataSource = self
         }
     }
+    var selectedItem = 0
+    var selectDate:(()->())?
+
 }

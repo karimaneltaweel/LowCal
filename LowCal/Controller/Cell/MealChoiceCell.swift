@@ -8,14 +8,8 @@
 import UIKit
 
 class MealChoiceCell: UITableViewCell {
-
-
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    @IBOutlet weak var selectPackage: UIButton!
+    var arrow:(()->())?
 
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
@@ -24,5 +18,9 @@ class MealChoiceCell: UITableViewCell {
         self.contentView.layer.borderColor = #colorLiteral(red: 0.8922383785, green: 0.947040379, blue: 0.932980597, alpha: 1).cgColor
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
 
+    }
+    
+    @IBAction func selectActionButton(_ sender: Any) {
+        arrow?()
     }
 }

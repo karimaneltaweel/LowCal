@@ -12,16 +12,19 @@ extension SectionOneCell: UICollectionViewDelegate, UICollectionViewDataSource{
         if collectionView == dateSection{
             return 5
         }
-        else
-        {
+        else{
             return 3
-            
         }
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == dateSection{
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "date", for: indexPath)
+            if indexPath.row == selectedItem  {
+                cell.contentView.backgroundColor = #colorLiteral(red: 0.4900045395, green: 0.7764635682, blue: 0.7376970649, alpha: 1)
+            }
+            else{
+                cell.contentView.backgroundColor = #colorLiteral(red: 0.9960785508, green: 0.9960785508, blue: 0.9960784316, alpha: 1)
+            }
             return cell
         }
         else{
@@ -29,6 +32,17 @@ extension SectionOneCell: UICollectionViewDelegate, UICollectionViewDataSource{
             return cell}
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == dateSection{
+            guard  let cell = dateSection.cellForItem(at: indexPath) else{
+                fatalError("un dequeue cell")
+            }
+            selectDate?()
+            selectedItem = indexPath.row
+            dateSection.reloadData()
+        }
+        
+    }
     
 }
 

@@ -8,7 +8,6 @@
 import UIKit
 
 class SectionTwoCell: UITableViewCell {
-
     @IBOutlet weak var monthCollection: UICollectionView!{
         didSet{
             monthCollection.dataSource = self
@@ -22,12 +21,18 @@ class SectionTwoCell: UITableViewCell {
         }
     }
     @IBOutlet weak var mealChoiceHeight: NSLayoutConstraint!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
-
+    
+    var index :Int?
+    var arrowSelectedTable:(()->())?
 }
+
+//struct PackagesModel: Decodable {
+//    var packages: [Package]?
+//}
+//
+//struct Package: Decodable {
+//    var id: Int?
+//    var title: String?
+//    var image: String?
+//    var selected: Bool? = false
+//}

@@ -8,6 +8,7 @@
 import UIKit
 
 class MonthCell: UICollectionViewCell {
+    
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
         self.layer.cornerRadius = 20

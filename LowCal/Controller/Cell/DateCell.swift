@@ -8,7 +8,6 @@
 import UIKit
 
 class DateCell: UICollectionViewCell {
-    
     override func layoutSublayers(of layer: CALayer) {
         super.layoutSublayers(of: layer)
         self.layer.cornerRadius = 24

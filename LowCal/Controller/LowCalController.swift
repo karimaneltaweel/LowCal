@@ -13,14 +13,19 @@ class LowCalController: UIViewController {
             headerView.layer.cornerRadius = 20
         }
     }
+    @IBOutlet weak var progressProtein: UIProgressView!
+    @IBOutlet weak var progressFat: UIProgressView!
+    @IBOutlet weak var progressCarbs: UIProgressView!
+    
     var firstColor = #colorLiteral(red: 0.9647058845, green: 0.9647058845, blue: 0.9647058845, alpha: 1).cgColor
-     var secondColor = #colorLiteral(red: 0.9960785508, green: 0.9960785508, blue: 0.9960784316, alpha: 1).cgColor
+    var secondColor = #colorLiteral(red: 0.9960785508, green: 0.9960785508, blue: 0.9960784316, alpha: 1).cgColor
     var Thirdcolor = #colorLiteral(red: 0.8961616158, green: 0.950962007, blue: 0.9369022846, alpha: 1).cgColor
+    var selectedIndex: Int?
+    var selectedIndexRow: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpGrediant()
-    }
-    
+            }
     private func setUpGrediant(){
         let gradient = CAGradientLayer()
         gradient.colors = [firstColor,secondColor,Thirdcolor]
@@ -30,7 +35,6 @@ class LowCalController: UIViewController {
         view.layer.insertSublayer(gradient, at: 0)
         gradient.frame = view.frame
     }
-    
     
 }
 

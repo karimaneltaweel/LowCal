@@ -116,10 +116,10 @@
 			isa = PBXGroup;
 			children = (
 				DD6859402A2C64B100AF2917 /* SectionOneCell.swift */,
-				DD6859422A2C64FA00AF2917 /* SectionTwoCell.swift */,
 				DD6859442A2C66A500AF2917 /* SectionOne+Delegate.swift */,
-				DD6859462A2C703100AF2917 /* DateCell.swift */,
+				DD6859422A2C64FA00AF2917 /* SectionTwoCell.swift */,
 				DD6859482A2C81E700AF2917 /* SectionTwo+delegate.swift */,
+				DD6859462A2C703100AF2917 /* DateCell.swift */,
 				DD68594A2A2C886400AF2917 /* MonthCell.swift */,
 				DD33BABD2A2CA5FF00477184 /* MealChoiceCell.swift */,
 			);
